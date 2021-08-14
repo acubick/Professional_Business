@@ -1,0 +1,130 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+@import 'outline';
+
+
+// @import "./outline";
+// @import "./_config";
+
+
+
+
+
+
+body {
+    color: #2f3035;
+    font-family: "Lato-Regular", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    overflow-x: hidden;
+    min-width: 320px;
+    padding-bottom: 100px;
+}
+
+$cerulean: #0086c6;
+$dark-grey-blue: #2c3e50;
+$bluish: #2c94c6;
+$yellow-orange: #ffb400;
+$orange: #f0600f;
+$topaz: #1abc9c;
+$silver: #bdc8d0;
+$dark: #1a1c27;
+$dark-two: #222533;
+$black: #353535;
+$greeny-blue-70: rgba(64, 170, 166, 0.7);
+$white: #dfdfdf;
+$black-70: rgba(0, 0, 0, 0.7);
+.container {
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.page-section {
+    margin-bottom: 80px;
+}
+
+
+/*=============================================
+=         Section First-screen            =
+=============================================*/
+
+.first-screen {
+    width: 100%;
+    background-color: #f5f5f5;
+}
+
+.first-screen__inner {
+    max-width: 1940px;
+    margin: 0 auto;
+    max-height: 1088px;
+    position: relative;
+}
+
+.first-screen__img {
+    max-width: 1940px;
+    width: 100%;
+}
+
+.first-screen__block-title {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    color: $dark-grey-blue;
+    font-family: "Lato-Bold", sans-serif;
+    line-height: normal;
+    font-weight: bold;
+    font-weight: 900;
+    text-transform: uppercase;
+    h1 {
+        font-size: 87.5px;
+    }
+    h2 {
+        font-size: 57px;
+    }
+}
+
+.first-screen__link {
+    order: -1;
+    margin-top: 60px;
+    border-radius: 6px;
+    box-shadow: 0px 5px 0 0 #c7950a;
+    background-color: #ecaf06;
+    padding: 25px 26px 20px;
+    color: #000000;
+    font-family: "Lato-Bold", sans-serif;
+    line-height: normal;
+    font-weight: bold;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: normal;
+}
+
+
+/*=====  End Section First-screen  ======*/
+
+
+/*=============================================
+=            Section WELCOME            =
+=============================================*/
+
+.button__search-img {
+    width: 21px;
+    height: 21px;
+}
+
+
+/*=====  End of Section WELCOME  ======*/

@@ -1,0 +1,6 @@
+@import "helpers/_mixins/font-face";
+
+@include font-face("SFProDisplay", "../fonts/SFProDisplay-Bold/SFProDisplay-Bold", bold);
+@include font-face("SFProDisplay", "../fonts/SFProDisplay-Semibold/SFProDisplay-Semibold", 600);
+@include font-face("SFProDisplay", "../fonts/SFProDisplay-Regular/SFProDisplay-Regular", 400, normal);
+//@include font-face("AaarghBold", "../fonts/RobotoBold/RobotoBold", bold);
