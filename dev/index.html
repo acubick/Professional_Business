@@ -17,8 +17,13 @@
 
 		<header class="first-screen">
 			<div class="first-screen__inner">
-				<img src="static/images/common/first-screen.png" srcset="static/images/common/first-screen@2x.png 2x,
-				static/images/common/first-screen@3x.png 3x" alt="first-screen image" class="header first-screen__img">
+				<picture>
+					<source srcset="static/images/common/first-screen.webp,
+													static/images/common/first-screen@2x.webp 2x,
+													static/images/common/first-screen@3x.webp 3x" class="header first-screen__img" type="image/webp">
+					<img src="static/images/common/first-screen.png" srcset="static/images/common/first-screen@2x.png 2x,
+															 static/images/common/first-screen@3x.png 3x" alt="first-screen image" class="header first-screen__img">
+				</picture>
 				<div class="first-screen__block-title">
 					<h1>Grow Your Business</h1>
 					<h2>We help you</h2>
@@ -26,68 +31,119 @@
 				</div>
 			</div>
 		</header>
-		<main class="main">main</main>
-		<section class="welcome">
-			<div class="container">
-				<div class="row__navigation">
-					<img src="static/images/common/logo-color-mini.png" srcset="static/images/common/logo-color-mini@2x.png 2x,
-						static/images/common/logo-color-mini@3x.png 3x" class="logo-color__mini" alt="logo-color__mini">
-					<nav>
-						<ul class="menu">
-							<li class="menu__item">
-								<a href="#" class="menu__link">Home</a>
-							</li>
-							<li class="menu__item">
-								<a href="#" class="menu__link">Page</a>
-							</li>
-							<li class="menu__item">
-								<a href="#" class="menu__link">Portfolio</a>
-							</li>
-							<li class="menu__item">
-								<a href="#" class="menu__link">Blog</a>
-							</li>
-							<li class="menu__item">
-								<a href="#" class="menu__link">Shop</a>
-							</li>
+		<main class="main">
+			<div class="navigation__wrapper">
+				<div class="container">
+					<div class="row__navigation">
+						<picture>
+							<source srcset="static/images/common/logo-color-mini.webp, 
+          static/images/common/logo-color-mini@2x.webp 2x,
+					static/images/common/logo-color-mini@3x.webp 3x" type="image/webp" class="logo-color__mini">
+							<img src="static/images/common/logo-color-mini.png" srcset="static/images/common/logo-color-mini@2x.png 2x,
+					static/images/common/logo-color-mini@3x.png 3x" class="logo-color__mini" alt="logo-color__mini">
+						</picture>
+						<nav>
+							<ul class="menu">
+								<li class="menu__item">
+									<a href="#" class="menu__link">Home</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Page</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Portfolio</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Blog</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Shop</a>
+								</li>
 
-							<li class="menu__item">
-								<a href="#" class="menu__link">Travel</a>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Travel</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Shortcodes</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Features</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Contact</a>
+								</li>
+							</ul>
+
+							<button class="button__search">
+								<img src="static/images/common/button-search.svg" alt="button-search" class="button__search-img">
+							</button>
+						</nav>
+					</div>
+				</div>
+			</div>
+			<section class="welcome">
+				<div class="container">
+					<div class="welcome__wrapper">
+					<span class="welcome__title">Welcome to</span>
+					<div class="welcome__subtitle">
+						<div class="subtitle__img">
+							<picture>
+								<source srcset="static/images/common/welcome-img.webp,
+								static/images/common/welcome-img@2x.webp 2x,
+								static/images/common/welcome-img@3x.webp 3x" type="image/webp" class="logo-color__mini">
+								<img src="static/images/common/welcome-img.png" srcset="static/images/common/welcome-img@2x.png 2x,
+												static/images/common/welcome-img@3x.png 3x" class="welcome-img" alt="welcome__img">
+							</picture>
+						</div>
+						<span class="subtitle__text">.graphics</span>
+					</div>
+					<div class="welcome__text">
+						Cras fringilla cursus libero, non sollicitudin tellus. Duis nec congue erat. Aenean viverra et ante non
+						volutpat. Integer quis condimentum mauris. Donec eget lorem fringilla, semper quam et, fermentum dolor. Cras
+						fringilla cursus libero, non sollicitudin tellus. Duis nec congue erat. Aenean viverra et ante non volutpat.
+						Integer quis condimentum mauris. Donec eget lorem fringilla, semper quam et, fermentum dolor.
+					</div>
+					<div class="welcome__cards">
+						<ul class="card__items">
+							<li class="card__item">
+								<a class="card__link">
+									<span class="icon__wrapper">
+										<img src="static/images/common/beer.svg" class="item__img beer" alt="beer svg">
+									</span>
+									<h4 class="item__title">Your Intro Title Here</h4>
+									<p class="item__text">Praesent turpis mauris, aliquet id dolor
+										Gravida adipiscing lectus ut rutrum
+										Aenean at posuere risus.</p>
+								</a>
 							</li>
-							<li class="menu__item">
-								<a href="#" class="menu__link">Shortcodes</a>
+							<li class="card__item">
+								<a class="card__link">
+									<span class="icon__wrapper">
+										<img src="static/images/common/king.svg" class="item__img king" alt="king svg">
+									</span>
+									<h4 class="item__title">Your Intro Title Here</h4>
+									<p class="item__text">Praesent turpis mauris, aliquet id dolor
+										Gravida adipiscing lectus ut rutrum
+										Aenean at posuere risus.</p>
+								</a>
 							</li>
-							<li class="menu__item">
-								<a href="#" class="menu__link">Features</a>
-							</li>
-							<li class="menu__item">
-								<a href="#" class="menu__link">Contact</a>
+							<li class="card__item">
+								<a class="card__link">
+									<span class="icon__wrapper">
+										<img src="static/images/common/box.svg" class="item__img box" alt="box svg">
+									</span>
+									<h4 class="item__title">Your Intro Title Here</h4>
+									<p class="item__text">Praesent turpis mauris, aliquet id dolor
+										Gravida adipiscing lectus ut rutrum
+										Aenean at posuere risus.</p>
+								</a>
 							</li>
 						</ul>
-
-						<button class="button__search">
-							<img src="static/images/common/button-search.svg" alt="button-search" class="button__search-img">
-						</button>
-					</nav>
+					</div>
 				</div>
-
-				<div class="welcome__title"></div>
-				<div class="welcome__img"></div>
-				<div class="welcome__text"></div>
-				<div class="welcome__cards">
-					<ul class="card__items">
-						<li class="card__item">
-							<a class="card__link">
-								<img src="" alt="" class="item__img">
-								<h4 class="item__title"></h4>
-								<p class="item__text"></p>
-							</a>
-						</li>
-					</ul>
 				</div>
-
-			</div>
-		</section>
-
+			</section>
+		</main>
 		<footer class="footer">footer</footer>
 
 	</div>

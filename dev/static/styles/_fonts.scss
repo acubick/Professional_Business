@@ -1,6 +1,16 @@
 @import "helpers/_mixins/font-face";
 
-@include font-face("SFProDisplay", "../fonts/SFProDisplay-Bold/SFProDisplay-Bold", bold);
-@include font-face("SFProDisplay", "../fonts/SFProDisplay-Semibold/SFProDisplay-Semibold", 600);
-@include font-face("SFProDisplay", "../fonts/SFProDisplay-Regular/SFProDisplay-Regular", 400, normal);
-//@include font-face("AaarghBold", "../fonts/RobotoBold/RobotoBold", bold);
+
+@include font-face("Lato-Black", "../fonts/Lato-Black/Lato-Black");
+@include font-face("Lato-BlackItalic", "../fonts/Lato-BlackItalic/Lato-BlackItalic");
+@include font-face("Lato-Bold", "../fonts/Lato-Bold/Lato-Bold");
+@include font-face("Lato-BoldItalic", "../fonts/Lato-BoldItalic/Lato-BoldItalic");
+@include font-face("Lato-Hairline", "../fonts/Lato-Hairline/Lato-Hairline");
+@include font-face("Lato-HairlineItalic", "../fonts/Lato-HairlineItalic/Lato-HairlineItalic");
+@include font-face("Lato-Italic", "../fonts/Lato-Italic/Lato-Italic");
+@include font-face("Lato-Light", "../fonts/Lato-Light/Lato-Light");
+@include font-face("Lato-LightItalic", "../fonts/Lato-LightItalic/Lato-LightItalic");
+@include font-face("Lato-Regular", "../fonts/Lato-Regular/Lato-Regular");
+@include font-face("Lato-Thin", "../fonts/Lato-Thin/Lato-Thin");
+@include font-face("Lato-ThinItalic", "../fonts/Lato-ThinItalic/Lato-ThinItalic");
+@include font-face("Helvetica-Neue-Ultra-Light-Ex", "../fonts/Helvetica Neue LT Std 23 Ultra Light Extended/Helvetica Neue LT Std 23 Ultra Light Extended");
