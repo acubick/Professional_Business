@@ -78,7 +78,9 @@ function scss2css() {
 				level: 2
 			}
 		}))
-		.pipe(autoprefixer())
+		.pipe(autoprefixer({
+			grid: true
+		}))
 		.pipe(gulpPlumber.stop())
 		.pipe(browserSync.stream())
 		.pipe(dest('dev/static/css/'))
@@ -220,8 +222,8 @@ function watchingFiles() {
 	})
 	// watch('dev/*.html', htmlInclude)
 	watch('dev/static/styles/**/*.scss', scss2css)
-	watch('[dev/static/images/**/*.{jpg,gif,png,svg}, !dev/static/images/sprite/*.svg]', imageMin)
 	watch('[dev/static/images/**/*.{jpg,gif,png}, !dev/static/images/sprite/*.svg]', webpC)
+	watch('[dev/static/images/**/*.{jpg,gif,png,svg}, !dev/static/images/sprite/*.svg]', imageMin)
 	watch('dev/static/images/sprite/*', svgSpriteBuild)
 	watch('dev/static/js/main.js', script)
 	watch('dev/*.html').on('change', browserSync.reload)

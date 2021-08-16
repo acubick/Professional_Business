@@ -39,22 +39,22 @@ body * {
 //   box-shadow: 0 0 15px 5px hsla(0, 0%, 0%, 0.5);
 // }
 
-// body *::before {
-//   content: attr(class);
-//   position: absolute;
-//   top: var(--outline-width);
-//   right: var(--outline-width);
-//   z-index: 10;
-//   height: 18px;
-//   font-size: 12px;
-//   line-height: 14px;
-//   font-family: monospace;
-//   white-space: nowrap;
-//   text-transform: none;
-//   color: hsl(0, 0%, 0%);
-//   background: var(--outline-color);
-//   opacity: 0.5;
-// }
+body *::before {
+  content: attr(class);
+  position: absolute;
+  top: var(--outline-width);
+  right: var(--outline-width);
+  z-index: 10;
+  height: 18px;
+  font-size: 12px;
+  line-height: 14px;
+  font-family: monospace;
+  white-space: nowrap;
+  text-transform: none;
+  color: hsl(0, 0%, 0%);
+  background: var(--outline-color);
+  opacity: 0.5;
+}
 
 // body *:hover::before {
 //   opacity: 1;

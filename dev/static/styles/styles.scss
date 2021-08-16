@@ -16,20 +16,6 @@ body {
   padding-bottom: 100px;
 }
 
-$cerulean: #0086c6;
-$dark-grey-blue: #2c3e50;
-$bluish: #2c94c6;
-$yellow-orange: #ffb400;
-$orange: #f0600f;
-$topaz: #1abc9c;
-$silver: #bdc8d0;
-$dark: #1a1c27;
-$dark-two: #222533;
-$black: #353535;
-$greeny-blue-70: rgba(64, 170, 166, 0.7);
-$grey: #dfdfdf;
-$black-70: rgba(0, 0, 0, 0.7);
-$black-deep: #000;
 .container {
   max-width: 1200px;
   padding: 0 20px;
@@ -41,7 +27,7 @@ $black-deep: #000;
 }
 
 /*=============================================
-=         Section First-screen            =
+=         SECTION  First-screen            =
 =============================================*/
 
 .first-screen {
@@ -110,7 +96,7 @@ $black-deep: #000;
 /*=====  End Section First-screen  ======*/
 
 /*=============================================
-=            NAVIGATION          =
+=           SECTION  NAVIGATION          =
 =============================================*/
 .navigation__wrapper {
   padding: 15px 0 15px;
@@ -178,7 +164,7 @@ nav {
 /*=====  End of NAVIGATION  ======*/
 
 /*=============================================
-=            Section WELCOME            =
+=            SECTION  WELCOME            =
 =============================================*/
 .welcome {
   padding: 84px 0 87px;
@@ -246,7 +232,7 @@ nav {
   border-radius: 50%;
   position: relative;
   cursor: pointer;
-	margin-bottom: 15px;
+  margin-bottom: 15px;
   transition: all 0.3s ease;
 }
 .item__img {
@@ -264,7 +250,7 @@ nav {
   border-radius: 50%;
   z-index: -1;
   border: solid 5px $greeny-blue-70;
-	transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .icon__wrapper:hover {
   transform: scale(0.8);
@@ -276,21 +262,20 @@ nav {
   transform: scale(1.2);
   z-index: 100;
 }
-.card__items{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
+.card__items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
-.card__link{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-max-width: 235px;
-text-align: center;
+.card__link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 235px;
+  text-align: center;
 }
-.item__title{
-
+.item__title {
   font-family: "Lato-Bold", sans-serif;
   font-size: 18px;
   font-weight: bold;
@@ -300,8 +285,8 @@ text-align: center;
   letter-spacing: normal;
   text-align: center;
 }
-.item__text{
-	font-family: "Lato-Regular", sans-serif;
+.item__text {
+  font-family: "Lato-Regular", sans-serif;
   font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
@@ -312,3 +297,141 @@ text-align: center;
   color: #a1b1bc;
 }
 /*=====  End of Section WELCOME  ======*/
+
+/*=============================================
+=           SECTION PORTFOLIO            =
+=============================================*/
+
+.portfolio {
+  padding: 96px 0 102px;
+  background-color: $dark-grey-blue;
+}
+.portfolio__wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio__title {
+  font-family: "Lato-Light", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: -0.3;
+  text-align: center;
+  color: $white;
+  margin-bottom: 16px;
+  span {
+    font-family: "Lato-Bold", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+  }
+}
+.portfolio__subtitle {
+  margin-bottom: 20px;
+}
+.portfolio__text {
+  max-width: 850px;
+  font-family: "Lato-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  text-align: center;
+  color: $white;
+  margin-bottom: 45px;
+}
+.portfolio__gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+	margin-bottom: 55px;
+  .gallery__buttons {
+    max-width: 1200px;
+    margin-left: -15px;
+    padding-bottom: 52px;
+  }
+  .gallery__button {
+    margin: 0 7px;
+    padding: 1px 13px 1px 13px;
+    border: solid 1px #3f556b;
+    color: $white;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.3;
+    background-color: transparent;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+  }
+  .gallery__button:hover {
+    border-color: transparent;
+    background-color: $yellow-orange;
+  }
+}
+.gallery__images {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(250px, 480px));
+  grid-template-rows: repeat(3, minmax(150px, 298px));
+}
+.gallery__item {
+  padding: 0 0 50% 0;
+  position: relative;
+  // overflow: hidden;
+}
+.gallery__item--wide {
+  grid-column: 1/3;
+	grid-row: 2/3;
+}
+.gallery__item--big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.gallery__item img {
+	width: 100%;
+	height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.portfolio__button{
+  font-family: "Lato-Bold", sans-serif;
+  font-size: 15px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.27;
+  letter-spacing: normal;
+	background-color: $yellow-orange;
+	padding: 16px 24px;
+	border-radius: 5px;
+	border: none;
+  color: $white;
+	display: block;
+	margin: 0 auto;
+}
+
+/*=====  End of Section PORTFOLIO  ======*/
+
+/*=============================================
+=            SECTION FOOTER            =
+=============================================*/
+
+.footer {
+  width: 100%;
+  padding-bottom: 400px;
+  background-color: rgb(239, 175, 241);
+}
+
+/*=====  End of  FOOTER  ======*/
