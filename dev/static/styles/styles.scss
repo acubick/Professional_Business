@@ -101,6 +101,7 @@ body {
 .navigation__wrapper {
   padding: 15px 0 15px;
   border-bottom: 2px solid $grey;
+	background-color: $white;
 }
 .row__navigation {
   display: flex;
@@ -168,6 +169,7 @@ nav {
 =============================================*/
 .welcome {
   padding: 84px 0 87px;
+	background-color: $white;
 }
 .welcome__wrapper {
   display: flex;
@@ -352,7 +354,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-	margin-bottom: 55px;
+  margin-bottom: 55px;
   .gallery__buttons {
     max-width: 1200px;
     margin-left: -15px;
@@ -378,34 +380,38 @@ nav {
 }
 .gallery__images {
   display: grid;
-  grid-template-columns: repeat(4, minmax(250px, 480px));
-  grid-template-rows: repeat(3, minmax(150px, 298px));
+  grid-template-columns: repeat(4, minmax(auto, 480px));
+  grid-template-rows: repeat(3, minmax(auto, 15.5vw));
 }
 .gallery__item {
-  padding: 0 0 50% 0;
+  padding: 0 0 30% 0;
   position: relative;
-  // overflow: hidden;
+  overflow: hidden;
 }
 .gallery__item--wide {
   grid-column: 1/3;
-	grid-row: 2/3;
+  grid-row: 2/3;
 }
 .gallery__item--big {
   grid-column: span 2;
   grid-row: span 2;
 }
-
+.gallery__item picture {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
 .gallery__item img {
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: auto;
   object-fit: cover;
   object-position: center;
   position: absolute;
-  top: 0;
-  left: 0;
+  // top: 0;
+  // left: 0;
 }
 
-.portfolio__button{
+.portfolio__button {
   font-family: "Lato-Bold", sans-serif;
   font-size: 15px;
   font-weight: 900;
@@ -413,16 +419,59 @@ nav {
   font-style: normal;
   line-height: 1.27;
   letter-spacing: normal;
-	background-color: $yellow-orange;
-	padding: 16px 24px;
-	border-radius: 5px;
-	border: none;
+  background-color: $yellow-orange;
+  padding: 16px 24px;
+  border-radius: 5px;
+  border: none;
   color: $white;
-	display: block;
-	margin: 0 auto;
+  display: block;
+  margin: 0 auto;
 }
 
 /*=====  End of Section PORTFOLIO  ======*/
+
+/*=============================================
+=           SECTION BLOG            =
+=============================================*/
+
+// .blog{
+//   width: 100%;
+//   height: 100vh;
+//   background-repeat: no-repeat;
+//   background-image: url('../images/common/blog-bg.png') 1x, url('../images/common/blog-bg@2x.png') 2x;
+//   // image-set for FF, only jpg gets downloaded for not supporting browsers
+//   background-image: -webkit-image-set(url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/14179/cust-housegreening-pup@2x-4cf7ada520811031a97bee12c06d9e9367f811bd86255ea60d40aa809cf58801.webp') 1x, url('https://text.ru/images/general/background/summer.jpg') 2x);
+// }
+
+.blog {
+  position: relative;
+}
+
+.blog:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../images/common/blog-bg.png");
+  /* image-set */
+  background-image: image-set(
+    "../images/common/blog-bg.png" 1x,
+    "../images/common/blog-bg@2x.png" 2x,
+    "../images/common/blog-bg@3x.png" 3x
+  );
+  background-image: -webkit-image-set(
+    url("../images/common/blog-bg.webp") 1x,
+    url("../images/common/blog-bg@2x.webp") 2x,
+    url("../images/common/blog-bg@3x.webp") 3x
+  );
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+/*=====  End of BLOG  ======*/
 
 /*=============================================
 =            SECTION FOOTER            =
@@ -431,7 +480,9 @@ nav {
 .footer {
   width: 100%;
   padding-bottom: 400px;
-  background-color: rgb(239, 175, 241);
+  // background-color: rgb(86, 84, 230);
+
+	outline: 1px dotted green;
 }
 
 /*=====  End of  FOOTER  ======*/
