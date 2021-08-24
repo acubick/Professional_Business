@@ -14,3 +14,15 @@
 @include font-face("Lato-Thin", "../fonts/Lato-Thin/Lato-Thin");
 @include font-face("Lato-ThinItalic", "../fonts/Lato-ThinItalic/Lato-ThinItalic");
 @include font-face("Helvetica-Neue-Ultra-Light-Ex", "../fonts/Helvetica Neue LT Std 23 Ultra Light Extended/Helvetica Neue LT Std 23 Ultra Light Extended");
+@font-face {
+	font-family: 'ElegantIcons';
+	src:url('../fonts/ElegantIcons/ElegantIcons.eot');
+	src:url('../fonts/ElegantIcons/ElegantIcons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ElegantIcons/ElegantIcons.woff') format('woff'),
+		url('../fonts/ElegantIcons/ElegantIcons.ttf') format('truetype'),
+		url('../fonts/ElegantIcons/ElegantIcons.svg#ElegantIcons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
